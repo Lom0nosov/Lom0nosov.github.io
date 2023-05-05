@@ -1,0 +1,573 @@
+nav
+  z-index: 4
+  position: fixed
+  top: 0
+  width: 100%
+  height: 50px
+  background: #212121
+
+.hamburger
+    display: none
+
+header
+  position: relative
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style: none
+
+  .menu_link
+    text-decoration: none
+    font-family: 'Roboto Light'
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    color: #FFFFFF
+    transition: 0.2s color
+    &:hover
+        color: $text_color_blue
+  .menu_item
+    border-right: 2px dotted black
+    padding-right: 42px
+    &:last-child
+        border-right: none
+
+.subheader
+  z-index: 1
+  margin-top: 50px
+  position: absolute
+  width: 100%
+  height: 84px
+  background: rgba(0, 0, 0, 0.6)
+
+  .subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+    &_img
+
+  .subheader_official
+    opacity: 0.5
+    margin-bottom: 6px
+    font-family: 'Roboto Thin'
+    font-weight: 100
+    font-size: 13px
+    color: #FFFFFF
+
+  .subheader_call
+    font-family: 'Roboto Light'
+    margin-top: 19px
+    font-weight: 300
+    font-size: 12px
+    text-align: right
+    color: #FFFFFF
+
+  .subheader_phone
+    font-family: 'Roboto Regular'
+    display: block
+    margin-bottom: 8px
+    font-weight: 400
+    font-size: 22px
+    color: #FFFFFF
+    text-transform: uppercase
+    text-align: right
+    line-height: 24px
+    text-decoration: none
+  .xs-visible
+    display: none
+  .subheader_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    background: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
+    font-family: 'Roboto Regular'
+    font-weight: 400
+    font-size: 14pxs
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.promo
+  min-height: 800px
+  background: url('../img/uber_bg.jpg') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  .promo_header
+    margin: 0
+    font-family: 'Roboto Black'
+    font-style: normal
+    font-weight: 900
+    font-size: 60px
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 60px
+    text-align: center
+
+  .promo_subheader
+    margin: 0
+    margin-top: 22px
+    font-family: 'Roboto Bold'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 36px
+    text-align: center
+
+  .promo_descr
+    display: block
+    margin-top: 23px
+    font-family: 'Roboto Regular'
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+
+  .promo_btn
+    /* Кнопка
+    display: block
+    margin: 115px auto 0 auto
+    margin-top: 115px
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
+    +btn_hover
+
+    /* ОТПРАВИТЬ ЗАЯВКУ!
+    font-family: 'Roboto Regular'
+    font-weight: 400
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+
+.cause_subheader
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 115px
+    height: 27px
+    background: #000000
+
+    /* преимущества
+    width: 113px
+    height: 24px
+    font-family: 'Roboto Regular'
+    font-weight: 400
+    font-size: 11px
+    line-height: 11px
+
+    /* or 100%
+
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    z-index: 2
+    &_white
+        color: black
+        background-color: #fff
+        width: 79px
+
+.cause_header
+    position: relative
+    text-align: center
+    margin-top: 32px
+    height: 48px
+    font-family: 'Roboto Bold'
+    font-weight: 700
+    font-size: 38px
+    line-height: 48px
+    text-transform: uppercase
+    color: #222222	
+    z-index: 2
+    &_white
+        color: #fff
+
+.cause
+  min-height: 767px
+  padding: 18px 0 64px 0
+
+  .cause_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 16px
+
+  .cause_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 116px
+    height: 116px
+    background: $text_color_blue
+    border-radius: 100%
+
+  .cause_descr
+    width: 360px
+
+  .cause_text
+    font-family: 'Roboto Light'
+    font-weight: 300
+    font-size: 15px
+    line-height: 21px
+    color: #202020
+
+  .cause_subtitle
+    font-family: 'Roboto Regular'
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: $text_color_blue
+
+.cause_header_dop
+    position: relative
+    font-family: 'Roboto Regular'
+    // margin-top: 2px 
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: #222222
+    z-index: 2
+    &_white
+        color: #fff
+    &_world
+        margin-top: 2px
+
+.mobile 
+    min-height: 864px
+    padding: 48px 0 79px 0
+    background: url(../img/mobile_bg.jpg) center (center / cover) no-repeat
+    .row
+        margin-top: 32px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto 
+        margin-bottom: 19px 
+        padding-top: 88px
+        &_1
+            background: url(../img/card_1.jpg) center (center / cover) no-repeat
+        &_2
+            background: url(../img/card_2.jpg) center (center / cover) no-repeat
+        &_3
+            background: url(../img/card_3.jpg) center (center / cover) no-repeat
+        &_4
+            background: url(../img/card_4.jpg) center (center / cover) no-repeat
+        &_5
+            background: url(../img/card_5.jpg) center (center / cover) no-repeat
+        &_6
+            background: url(../img/card_6.jpg) center (center / cover) no-repeat
+        &_subtitle
+            font-family: 'Roboto Regular'
+            font-weight: 400
+            font-size: 24px
+            text-transform: uppercase
+            text-align: center
+            color: #FFFFFF
+        &_plus
+            width: 29px
+            height: 29px
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            background: #000000
+            margin: 0 auto
+            border-radius: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $text_color_blue
+                transition: 0.3s all
+            &::after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $text_color_blue
+                transition: 0.3s all
+            &:hover
+                &::before, &::after
+                    background-color: $text_color_pink
+                    
+.choice
+    position: relative
+    padding: 57px 0 138px 0
+    min-height: 898px
+    background: url(../img/mobile_bg.jpg) center (center / cover) no-repeat
+    .black
+        position: absolute
+        background-color: black
+        top: 0
+        left: 0
+        width: 100%
+        height: 499px
+        z-index: 1
+    &_car
+        position: relative
+        display: flex
+        margin: 56px 
+        justify-content: center
+        z-index: 2
+    &_header_dop_2
+        height: 49px
+        text-align: center
+        font-family: 'Roboto Light'
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        color: #222222
+
+
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0px
+    &_title
+        font-family: 'Roboto Regular'
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+    &_list
+        list-style: none
+        padding-left: 57px
+        margin-top: 22px
+        li
+            font-family: 'Roboto Light'
+            position: relative
+            color: black
+            font-weight: 300
+            font-size: 17px
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/blue.png') center (center / cover) no-repeat
+    &_descr
+        font-family: 'Roboto Light'
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+        width: 480px
+    .warning
+        .require_title
+            color: $text_color_pink
+        .require_list
+            li
+                &::before
+                    background: url('../icons/red.png') center (center / cover) no-repeat
+
+.world
+    position: relative
+    min-height: 720px
+    padding: 48px 0 21px 0
+    background: url('../img/world_bg.jpg') center (center / cover) no-repeat
+    &_down
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        &_adress
+            font-family: 'Roboto Regular'
+            font-weight: 400
+            font-size: 15px
+            text-align: center
+            text-transform: uppercase
+            color: #1FBAD6
+            text-decoration: none
+            transition: 0.5s all
+            &:hover
+                color: #fff
+
+// .footer
+//     position: relative
+//     min-height: 155px
+//     padding: 14px 23px 39px 23px
+//     a
+//         text-decoration: none
+//     &_divider
+//         display: block
+//         margin: 0 auto
+//         width: 299px
+//         height: 4px
+//         background: #1FBAD6
+//     &_social
+//         position: absolute
+//         left: 23px
+//         top: 48px
+//         display: flex
+//         justify-content: space-between
+//         width: 160px
+//         &_roll
+//             width: 32px
+//             height: 32px
+//             display: flex
+//             justify-content: center
+//             align-items: center
+//             background-color: #070716
+//             border-radius: 100%
+//             i
+//                 color: #fff
+//     &_com
+//         // position: absolute
+//         // bottom: 19px
+//         // left: 50%
+//         // transform: translateX(-50%)
+//         display: block
+//         width: 390px
+//         margin: 0 auto
+//         margin-top: 35px
+//         &_main
+//             display: flex
+//             justify-content: space-between
+//             padding: 0 10px
+//             a
+//                 font-family: 'Roboto Light'
+//                 font-weight: 300
+//                 font-size: 15px
+//                 text-transform: uppercase
+//                 color: #070716
+//         &_sub
+//             display: flex
+//             justify-content: space-between
+//             margin-top: 10px
+//             a
+//                 font-family: 'Roboto Light'
+//                 font-weight: 300
+//                 font-size: 11px
+//                 text-transform: uppercase
+//                 color: #999999
+//         &_lang
+//             display: block
+//             margin-top: 19px
+//             font-family: 'Roboto Regular'
+//             font-weight: 400
+//             font-size: 11px
+//             text-align: center
+//             text-transform: uppercase
+//             color: #1FBAD6
+footer 
+    padding: 14px 23px 39px 23px
+    a 
+        text-decoration: none
+.footer
+    &_divider
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+        margin: 0 auto
+    &_wrapper
+        display: flex 
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    &_wrapper > div 
+        width: 33%
+        &:nth-child(3)
+            display: flex 
+            justify-content: flex-end
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        &_item 
+            display: flex 
+            justify-content: center
+            align-items: center
+            margin: 0 4px 
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%
+            i 
+                color: #fff
+    &_links
+        width: 390px
+        margin: 0 auto
+        &_main 
+            display: flex 
+            justify-content: space-between
+            padding: 0 10px
+            a 
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+        &_sub 
+            display: flex 
+            justify-content: space-between
+            margin-top: 10px
+            a 
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_lang 
+            display: block 
+            margin: 0 auto
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            margin-top: 19px
+            text-transform: uppercase
+            text-align: center
+    &_apps
+        &_a
+            &_img
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
